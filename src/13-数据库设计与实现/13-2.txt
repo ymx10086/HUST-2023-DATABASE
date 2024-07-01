@@ -1,0 +1,17 @@
+ 请给出ER图文件存放的URL:
+ersolution.jpg：https://s1.ax1x.com/2023/06/21/pCGkpon.jpg
+
+ 以下给出关系模式：
+
+电影(movie)(movie_ID,title,type,runtime,release_date,director,starring);主码:(movie_ID);  
+顾客(customer)(c_ID,name,phone);主码:(c_ID);  
+放映厅(hall)(hall_ID,mode,capacity,location);主码:(hall_ID);  
+排场(schedule)(schedule_ID, date, time, price, number, hall_ID, movie_ID);主码:(schedule_ID);外码:(hall_ID,movie_ID);  
+电影票(ticket)(ticket_ID,seat_num,c_ID,schedule_ID);主码:(ticket_ID);外码:(c_ID,schedule_ID);  
+
+
+
+
+
+
+
